@@ -19,6 +19,8 @@ import FruitsAdmin from "./pages/admin/FruitsAdmin";
 import VegetablesAdmin from "./pages/admin/VegetablesAdmin";
 import VideosAdmin from "./pages/admin/VideosAdmin";
 
+const LOGIN_URL = process.env.REACT_APP_LOGIN_URL;
+
 export default function App() {
   return (
     <AuthProvider>
@@ -32,7 +34,7 @@ export default function App() {
           <Route path="/dairy" element={<DairyFarming />} />
           <Route path="/horticulture" element={<Horticulture />} />
         </Route>
-        <Route path="/gsproductions-admin-login" element={<Login />} />
+        <Route path={LOGIN_URL} element={<Login />} />
         <Route
           path="/admin"
           element={
