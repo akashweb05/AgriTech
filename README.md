@@ -57,3 +57,12 @@ Backend: https://localhost:<port>
 Frontend: http://localhost:3000
 
 #### Open your browser to see the dashboard and admin panel in action. 🚀
+
+## 🔑 Environment Variables
+
+Create a `.env` file in the root folder based on `.env.example`:
+
+```bash
+copy .env.example .env
+```
+
