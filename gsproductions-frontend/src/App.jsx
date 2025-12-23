@@ -19,7 +19,7 @@ import FruitsAdmin from "./pages/admin/FruitsAdmin";
 import VegetablesAdmin from "./pages/admin/VegetablesAdmin";
 import VideosAdmin from "./pages/admin/VideosAdmin";
 
-const LOGIN_URL = process.env.REACT_APP_LOGIN_URL;
+const LOGIN_URL = import.meta.env.VITE_LOGIN_URL ?? '/login';
 
 export default function App() {
   return (
